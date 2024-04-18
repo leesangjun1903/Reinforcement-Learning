@@ -28,16 +28,16 @@ dilemma detail in the upcoming chapters.
 Say, If you want to teach a robot to walk, without getting stuck by hitting at the mountain,
 you will not explicitly teach the robot not to go in the direction of mountain,
 
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/B09792_01_01.png)
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/B09792_01_01.png)
 
 Instead, if the robot hits and get stuck on the mountain you will reduce 10 points so that
 robot will understand that hitting mountain will give it a negative reward so it will not go
 in that direction again.
 
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/B09792_01_02.png)
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/B09792_01_02.png)
 
 And you will give 20 points to the robot when it walks in the right direction without getting
 stuck. So robot will understand which is the right path to rewards and try to maximize the
 rewards by going in a right direction.
 
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/B09792_01_03.png)
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/B09792_01_03.png)
