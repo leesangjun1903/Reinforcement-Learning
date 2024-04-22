@@ -36,6 +36,7 @@
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.51.03.png)
 
+## Bellman optimality equation
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.51.11.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.59.23.png)
@@ -48,6 +49,7 @@
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.51.24.png)
 
+## The relationship between the value and Q functions
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.00.49.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.01.25.png)
