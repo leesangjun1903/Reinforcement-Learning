@@ -7,4 +7,5 @@ Bellmann Equation
 
 
 ref) Deep Reinforcement Learning, Seungsang Oh  
-Deep Reinforcement Learning with Python, Sudharsan Ravichandiran
+Deep Reinforcement Learning with Python, Sudharsan Ravichandiran  
+https://tutorials.pytorch.kr/intermediate/reinforcement_ppo.html
