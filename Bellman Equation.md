@@ -5,19 +5,10 @@
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.55.29.png)
 
-## Bellman Backup
+### Bellman Backup
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.55.45.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.56.26.png)
-
-## Value Functions
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.12.png)
-
-### Statistical Thm
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.25.png)
-
-## Bellman expectation equation
-![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.36.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.57.23.png)
 
@@ -28,6 +19,15 @@
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.58.38.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.59.13.png)
+
+## Value Functions
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.12.png)
+
+### Statistical Thm
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.25.png)
+
+## Bellman expectation equation
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.36.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-04-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.47.png)
 
