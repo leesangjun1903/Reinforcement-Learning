@@ -3,7 +3,7 @@
 
 Markov property, Markov Decision Process(MDP)  
 Action, State, Reward, Policy, Optimal Policy  
-Bellmann Equation
+Bellmann Equation  
 Dynamic Programming  
 Value Iteration, Policy Iteration
 
