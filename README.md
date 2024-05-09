@@ -5,7 +5,10 @@ Markov property, Markov Decision Process(MDP)
 Action, State, Reward, Policy, Optimal Policy  
 Bellmann Equation  
 Dynamic Programming  
-Value Iteration, Policy Iteration
+Value Iteration, Policy Iteration  
+GPI  
+Monte Carlo Method
+
 
 
 ref) Deep Reinforcement Learning, Seungsang Oh  
