@@ -6,6 +6,21 @@
 # Generalized Policy Iteration (GPI)
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-08%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.24.27.png)
 
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.42.43.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.42.58.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.43.07.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.43.16.png)
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.43.27.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.43.43.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.48.17.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.48.38.png)
+
 # Monte Carlo method (MC)
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-08%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.24.38.png)
 
@@ -136,3 +151,33 @@ ref) https://untitledtblog.tistory.com/135
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.34.30.png)
 
 ![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.35.32.png)
+
+### MC Control : Exploration starts with On-policy and Off-policy and GPI : epsilon-soft
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.50.52.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.51.32.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.51.52.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.52.08.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.52.19.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.52.37.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.53.01.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.53.08.png)
+
+## GLIE MC Control
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.06.11.png)
+
+ref) https://cding.tistory.com/53  
+https://ralasun.github.io/reinforcement%20learning/2020/07/29/mc-td-control/  
+https://ai.stackexchange.com/questions/6486/why-is-glie-monte-carlo-control-an-on-policy-control  
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.07.48.png)
+
+![](https://github.com/leesangjun1903/Reinforcement-Learning/blob/main/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-12%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.08.15.png)
+
+
