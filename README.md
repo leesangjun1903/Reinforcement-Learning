@@ -7,7 +7,9 @@ Bellmann Equation
 Dynamic Programming  
 Value Iteration, Policy Iteration  
 GPI  
-Monte Carlo Method
+Monte Carlo Method\
+Temporal Difference Learning
+DQN
 
 
 
