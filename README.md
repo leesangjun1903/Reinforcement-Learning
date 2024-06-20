@@ -10,6 +10,9 @@ GPI
 Monte Carlo Method  
 Temporal Difference Learning  
 DQN
+Policy Gradient Algorithm
+REINFORCE
+Actor Critic Method
 
 
 
