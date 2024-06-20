@@ -9,10 +9,11 @@ Value Iteration, Policy Iteration
 GPI  
 Monte Carlo Method  
 Temporal Difference Learning  
-DQN
-Policy Gradient Algorithm
-REINFORCE
-Actor Critic Method
+DQN  
+Dueling DQN, Doubling DQN  
+Policy Gradient Algorithm  
+REINFORCE  
+Actor Critic Method  
 
 
 
