@@ -41,7 +41,7 @@ QR-DQN
 - Reinforcement-Learning-Demo https://github.com/catchy666/Reinforcement-Learning-Demo/tree/main
 - reinforcement_learning LeeSungchul https://github.com/SungchulLee/reinforcement_learning
 - Reinforcement Learning KR https://github.com/reinforcement-learning-kr
-- https://tutorials.pytorch.kr/intermediate/reinforcement_ppo.html  
+- REINFORCEMENT LEARNING (PPO) WITH TORCHRL TUTORIAL https://tutorials.pytorch.kr/intermediate/reinforcement_ppo.html  
 - https://sumniya.tistory.com/category/RL/Contents  
 - https://dnddnjs.gitbooks.io/rl/content/  
 - https://ai-sinq.tistory.com/category/Reinforcement%20Learning  
