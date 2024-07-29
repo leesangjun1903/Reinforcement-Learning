@@ -14,11 +14,19 @@ Dueling DQN, Doubling DQN
 Policy Gradient Algorithm  
 REINFORCE  
 Actor Critic Method  
+A3C  
+TRPG  
+PPO  
+Distributional RL  
+QR-DQN
 
 
+## Lecture
+- Deep Reinforcement Learning, Seungsang Oh  
+- Deep Reinforcement Learning with Python, Sudharsan Ravichandiran  
+- Deep Reinforcement Learning with Python by Nimish Sanghi
 
-ref) Deep Reinforcement Learning, Seungsang Oh  
-Deep Reinforcement Learning with Python, Sudharsan Ravichandiran  
+## Blog
 https://tutorials.pytorch.kr/intermediate/reinforcement_ppo.html  
 https://sumniya.tistory.com/category/RL/Contents  
 https://dnddnjs.gitbooks.io/rl/content/  
