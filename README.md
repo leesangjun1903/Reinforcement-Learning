@@ -1,6 +1,5 @@
 # Reinforcement-Learning
 
-
 Markov property, Markov Decision Process(MDP)  
 Action, State, Reward, Policy, Optimal Policy  
 Bellmann Equation  
@@ -20,21 +19,15 @@ PPO
 Distributional RL  
 QR-DQN
 
+## Paper with name
+- OpenAI Gym(papers with code) : https://paperswithcode.com/task/openai-gym
+- TRPO, Trust Region Policy Optimization with Generalized Advantage Estimation https://github.com/pat-coady/trpo/tree/master
 
-## Lecture
+## Lecture with Theory
 - Deep Reinforcement Learning, Seungsang Oh https://www.youtube.com/playlist?list=PLvbUC2Zh5oJtYXow4jawpZJ2xBel6vGhC
 - Deep Reinforcement Learning with Python, Sudharsan Ravichandiran https://github.com/sudharsan13296/Deep-Reinforcement-Learning-With-Python/tree/master
 - Deep Reinforcement Learning with Python by Nimish Sanghi https://github.com/Apress/deep-reinforcement-learning-python/tree/main
 - Hands-On Reinforcement Learning With Python https://github.com/sudharsan13296/Hands-On-Reinforcement-Learning-With-Python/tree/master
-
-
-## Paper with name(code)
-- OpenAI Gym(papers with code) : https://paperswithcode.com/task/openai-gym
-- TRPO, Trust Region Policy Optimization with Generalized Advantage Estimation https://github.com/pat-coady/trpo/tree/master
-
-## Projects
-- Quantile Regression DQN - RL : https://www.kaggle.com/code/auxeno/quantile-regression-dqn-rl
-
 
 ## ETC(Blog)
 - Gym Rendering for Colab https://github.com/ryanrudes/colabgymrender?tab=readme-ov-file
