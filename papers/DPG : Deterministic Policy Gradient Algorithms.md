@@ -119,3 +119,8 @@ Chain rule을 취하면 action에 대한 action-value의 그래디언트와 poli
 이렇게 정책을 바꾸면, 그 정책에 따라서 state distribution $\(\rho^\mu\)$ 또한 변하게 되어서 위의 업데이트 방식이 올바르지 못하다고 생각할 수 있지만, stochastic policy gradient과 마찬가지로 state distribution에 의존하지 않는 그래디언트 표현식을 도출할 수 있다.
 
 ## Deterministic Policy Gradient Theorem
+
+
+# Reference
+- https://sylim2357.github.io/paper%20review/dpg/
+- https://talkingaboutme.tistory.com/entry/RL-Review-Deterministic-Policy-Gradient-Algorithm
