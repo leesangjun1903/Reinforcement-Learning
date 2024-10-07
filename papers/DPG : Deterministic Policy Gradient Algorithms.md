@@ -124,3 +124,4 @@ Chain rule을 취하면 action에 대한 action-value의 그래디언트와 poli
 # Reference
 - https://sylim2357.github.io/paper%20review/dpg/
 - https://talkingaboutme.tistory.com/entry/RL-Review-Deterministic-Policy-Gradient-Algorithm
+- https://enfow.github.io/paper-review/reinforcement-learning/model-free-rl/2020/12/25/DPG-deterministic_policy_gradient_algorithms/
