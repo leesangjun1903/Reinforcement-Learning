@@ -200,12 +200,39 @@ $\(\mu\)$ 는 target policy이자 optimal policy를 학습하는 것이므로 �
 그래디언트에 영향을 주지 않고 $\(\nabla_aQ^\mu\)$ 대신 사용할 수 있는 $\(\nabla_aQ^w\)$ 로 DPG Actor-Critic 알고리즘을 만드는 것이다.
 
 - Theorem 3. $\(\nabla_\theta J_\beta(\theta)=\mathbb{E}[\nabla_\theta\mu_\theta(s)\,\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}]\)$ 인 $\(\mu_\theta(s)\)$ 에 $\(Q^w(s,a)\)$ 가 compatible하기 위해서는 아래와 같은 조건을 만족해야 한다.
+1.  $\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}=\nabla_\theta\mu_\theta(s)^\top w$
+2.  $\epsilon(s;\theta,w)=\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}-\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}$ 일 때 파라미터 $w$ 는 $MSE(\theta,w)=\mathbb{E}[\epsilon(s;\theta,w)^\top\epsilon(s;\theta,w)]$를 최소화한다.
+
+먼저, deterministic policy $\(\mu_\theta(s)\)$ 에 대해서 $\(Q^w(s,a)=(a-\mu_\theta(s))^\top\nabla_\theta\mu_\theta(s)^\top w+V^v(s)\)$ 의 형태로 표현할 수 있는 compatible 함수가 있다는 것을 알 수 있다.  
+$\(V^v(s)\)$ 는 action과 상관 없는 state-value함수를 나타내는 함수로써, state feature $\(\phi(s)\)$ 의 선형결합 $\(v^\top\phi(s)\)$ 등을 사용할 수 있다.
+
+위와 같이 $\(Q^w\)$ 를 정의했을 때 각 항의 의미를 살펴보자.  
+먼저 두번째 항은 상태 $\(s\)$ 의 value함수이다.  
+첫번째 항은 $\(s\)$ 에서 $\(\mu_\theta(s)\)$ 대신 $\(a\)$ 라는 행동을 취했을 때 얻는 <em>Advantage</em>의 의미를 가지고 있다.  
+Advantage항은 파라미터에 대해서 선형임을 알 수 있다.  
+$\(\phi(s,a)\overset{def}{=}\nabla_\theta\mu_\theta(s)(a-\mu_\theta(s))\)$ 라고 두면 Advantage $\(A^w(s,a)=\phi(s,a)^\top w\)$ 로 나타낼 수 있기 때문이다.  
+파라미터가 $\(A\)$ 에만 들어가기 때문에 $\(Q^w\)$ 는 Theorem 3의 첫번째 조건을 만족한다.  
+사실 선형함수로 $\(Q^w\)$ 를 나타낸다는 것 자체가 적절하지 않을 수도 있으나, (선형함수근사를 하면 근사치가 수렴하지 않을 수도 있다.) 국지적(local)으로 보면 괜찮다고 한다.  
+특히, deterministic policy에서 아주 작은 deviation이 있을 때의 advantage를 알고 싶을 때 $\(A^w(s,\mu_\theta(s)+\delta)=\delta^\top\nabla_\theta\mu_\theta(s)^\top w\)$ 처럼 표현할 수 있다.
+
+이제 Theorem 3의 두 번째 조건을 보자.  
+$\(Q^w\)$ 의 그래디언트와 $\(Q^\mu\)$ 의 그래디언트를 피팅하는 회귀문제로 볼 수 있다.  
+$\(Q^w\)$ 를 선형함수로 두었으므로 그 그래디언트는 $\(\phi\)$ 라고 생각할 수 있다.  
+하지만 $\(Q^\mu\)$ 를 실제로 얻기는 힘드므로 stochastic policy gradient의 경우와 마찬가지로 두 번째 조건은 완화하여 SARSA나 Q-Learning같은 policy evaluation method를 사용하게 된다.
+
+결과적으로 Compatible Off-Policy Deterministic Actor Critic 알고리즘은 $\(\phi(s,a)=a^\top\nabla_\theta\mu_\theta(s)\)$ 라고 정의하여 $\(Q^w\)$ 를 만들고 Q-Learning을 통해서 action-value를 추정한다.  
+알고리즘은 다음과 같다.
 ```math
 \begin{aligned}
-1. \nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}=\nabla_\theta\mu_\theta(s)^\top w  \\
-2. \epsilon(s;\theta,w)=\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}-\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}일 때 파라미터 w는 \(MSE(\theta,w)=\mathbb{E}[\epsilon(s;\theta,w)^\top\epsilon(s;\theta,w)]\)를 최소화한다.
+\delta_t=r_t+\gamma Q^w(s_{t+1},\mu_\theta(s_{t+1}))-Q^w(s_t,a_t)\\
+\theta_{t+1}=\theta_t+\alpha_\theta\nabla_\theta\mu_\theta(s_t)(\nabla_\theta \mu_\theta(s_t)^\top w_t)\\
+w_{t+1}=w_t+\alpha_w\delta_t\phi(s_t,a_t)\\
+v_{t+1}=v_t+\alpha_v\delta_t\phi(s_t)
 \end{aligned}
 ```
+
+이외에도, 이 논문은 선형함수근사를 활용한 Off-policy Q-learning이 발산할 수도 있다는 사실 때문에 gradient Temporal Difference 방식을 적용한 알고리즘을 제안하고 Natural Policy Gradient(NPG) 방식에 DPG를 적용한 것을 보여주기도 하였다.  
+특히, Natural Policy Gradient(NPG) 는 Fisher Information metric이 최대가 되게 하는 그래디언트 방향으로 정책을 업데이트 하는데, deterministic policy을 사용하는 경우 기존 방법에서 policy의 분산을 0으로 줄였을 때 나타나는 metric을 사용하는 것을 보여주었다.
 
 
 # Reference
