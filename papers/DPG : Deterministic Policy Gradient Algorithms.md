@@ -119,6 +119,93 @@ Chain rule을 취하면 action에 대한 action-value의 그래디언트와 poli
 이렇게 정책을 바꾸면, 그 정책에 따라서 state distribution $\(\rho^\mu\)$ 또한 변하게 되어서 위의 업데이트 방식이 올바르지 못하다고 생각할 수 있지만, stochastic policy gradient과 마찬가지로 state distribution에 의존하지 않는 그래디언트 표현식을 도출할 수 있다.
 
 ## Deterministic Policy Gradient Theorem
+이제 제대로 DPG를 정의한다. 아래와 같이 정의된 강화학습 문제의 목적함수가 있다고 하자.
+
+```math
+J(\mu_\theta)=\mathbb{E}[r^\gamma_1\mid\mu]\\
+=\int_\mathcal{S}\rho^\mu(s)r(s,\mu_\theta(s))\,ds=\mathbb{E}_{s\sim\rho^\mu}[r(s,\mu_\theta(s))]
+```
+
+- Theorem 1. MDP가 regularity condition을 만족한다면 deterministic policy gradient가 존재하고, 아래와 같이 나타낼 수 있다.
+```math
+\nabla_\theta J(\mu_\theta)=\int_\mathcal{S}\rho^\mu(s)\nabla_\theta\mu_\theta(s)\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}ds \\ =\mathbb{E}_{s\sim\rho^\mu}[\nabla_\theta\mu_\theta(s)\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}]
+```
+여기서 제안하는 regularity condition은 state distribution, policy, reward과 그 도함수가 모든 파라미터에 대해서 연속임을 가정하는 것이다.
+
+## Limit of the Stochastic Policy Gradient
+Stochastic policy에 결정적인 부분과 확률적인 부분이 있다고 한다면, 확률적인 부분을 줄이면 줄일수록 deterministic policy에 가까워진다는 생각을 할 수 있다.  
+이 논문에서는 stochastic policy $\(\pi_{\mu_\theta,\sigma}\)$ 를 deterministic policy $\(\mu_\theta\)$ 와 분산 $\(\sigma\)$ 로 나누어서 생각한다.  
+이 방식으로 $\(\sigma\rightarrow0\)$ 일 때 stochastic policy gradient가 deterministic policy gradient에 수렴한다는 것을 증명하였다.
+
+- Theorem 2. MDP가 regularity condition을 만족하고 $\(\nu_\sigma\)$ 가 regular data approximation, $\(\sigma\)$ 가 분산을 조정하는 파라미터일 때 $\(\pi_{\mu_\theta,\sigma}(a\mid s)=\nu_\sigma(\mu_\theta(s),a)\)$ 인 stochastic policy $\(\pi_{\mu_\theta,\sigma}\)$ 가 있다고 하면 아래와 같은 등식이 성립한다.
+
+```math
+\underset{\sigma\downarrow0}{\lim}\nabla_\theta J(\pi_{\mu_\theta,\sigma})=\nabla_\theta J(\mu_\theta)
+```
+좌변은 stochastic policy gradient, 우변은 deterministic policy gradient를 나타낸다.
+
+stochastic policy의 분산이 작아져서 0이 되면 그 그래디언트가 deterministic policy gradient에 수렴하는 것을 보인 것이다.
+
+# Deterministic Actor-Critic Algorithm
+Deterministic Policy Gradient를 정의했으니, actor-critic 알고리즘에 DPG를 적용한다.
+
+## On-Policy Deterministic Actor-Critic
+Deterministic policy에 on-policy방식으로 actor-critic을 진행하면 탐색이 제한되기 때문에 제대로 value function approximation이 힘들어질 수 있으나, 일단 적용 가능성을 위해 on-policy deterministic Actor-Critic 알고리즘을 만든다.
+
+Stochastic Actor-Critic 과 마찬가지로, actor는 위에서 정의한 deterministic policy gradient에 따라서 policy parameter $\(\theta\)$ 를 업데이트 하고, critic은 on-policy기법인 SARSA를 사용하여 action-value function을 근사한다.  
+알고리즘은 아래와 같다.
+
+```math
+\begin{aligned}
+\delta_t=r_t+\gamma Q^w(s_{t+1},a_{t+1})-Q^w(s_t,a_t) \newline
+w_{t+1}=w_t+\alpha_w\delta_t\nabla_w Q^w(s_t,a_t) \newline
+\theta_{t+1}=\theta_t+\alpha_\theta\nabla_\theta\mu_\theta(s_t)\,\nabla_aQ^w(s_t,a_t)\mid_{a=\mu_\theta(s)}
+\end{aligned}
+```
+
+## Off-Policy Deterministic Actor-Critic
+탐색을 높이기 위해서 Off-policy Actor-Critic 을 제안한다.  
+Deterministic target policy $\(\mu_\theta(s)\)$ 와 stochastic behaviour policy $\(\beta(a\mid s)\)$ 를 나누어서 생각한다.  
+Stochastic off-policy Actor-Critic 때와 마찬가지로 강화학습 문제의 목표함수를 다음과 같이 정의한다.
+
+```math
+J_\beta(\mu_\theta)=\int_\mathcal{S}\rho^\beta(s)V^\mu(s)\,ds=\int_\mathcal{S}\rho^\beta(s)Q^\mu(s,\mu_\theta(s))\,ds
+```
+
+Stochastic Policy Gradient때와 마찬가지로 $\(\nabla_\theta Q^{\mu_\theta}(s,a)\)$ 항을 스킵하면 아래와 같이 목표함수의 그래디언트를 근사할 수 있다.
+```math
+\nabla_\theta J_\beta(\mu_\theta)\approx\int_\mathcal{S}\rho^\beta(s)\nabla_\theta\mu_\theta(a\mid s)Q^\mu(s,a)\,ds\\
+=\mathbb{E}_{s\sim \rho^\beta}[\nabla_\theta\mu_\theta(s)\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}]
+```
+Actor-Critic알고리즘에서 actor는 위의 그래디언트 방향으로 policy parameter를 업데이트하고, critic은 off-policy기법인 Q-Learning을 통해서 action-value function을 근사한다.  
+전체적인 알고리즘은 아래와 같다.
+
+```math
+\begin{aligned}
+\delta_t=r_t+\gamma Q^w(s_{t+1},\mu_\theta(s_{t+1}))-Q^w(s_t,a_t)\\
+w_{t+1}=w_t+\alpha_w\delta_t\nabla_w Q^w(s_t,a_t)\\
+\theta_{t+1}=\theta_t+\alpha_\theta\nabla_\theta\mu_\theta(s_t)\,\nabla_aQ^w(s_t,a_t)\mid_{a=\mu_\theta(s)}
+\end{aligned}
+```
+또한, $\(a_t\)$는 $\(\beta\)$에서 샘플링되지만 action-value function은 이 policy에서 off-policy하게 업데이트 된다는 것을 알 수 있다.  
+Q-Learning target $\(\delta\)$ 가 $\(\mu\)$ 에서 나온 action을 기반으로 만들어지기 때문이다.  
+$\(\mu\)$ 는 target policy이자 optimal policy를 학습하는 것이므로 첫줄의 $(Q^w(s_{t+1},\mu_\theta(s_{t+1}))\)$ 는 $\(\underset{a}{\text{max}}Q\)$ 를 근사하는 것이라고 생각할 수 있다.
+
+정책이 deterministic하기 때문에 action distribution에서 취해지는 적분이 필요가 없어지게 되어 actor에서 importance sampling이 필요가 없다.  
+비슷하게 Q-Learning을 사용하기 때문에 critic에서도 importance sampling이 필요가 없는 것을 알 수 있다.
+
+## Compatible Function Approximation
+앞서 stochastic policy gradient 에서 compatible function에 대해서 살펴보았다.  
+이 부분에서는 deterministic policy gradient에서 $\(Q^w\)$ 가 compatible하기 위해 필요한 조건을 알아보고 compatible한 함수로 DPG A-C알고리즘을 만든다.  
+그래디언트에 영향을 주지 않고 $\(\nabla_aQ^\mu\)$ 대신 사용할 수 있는 $\(\nabla_aQ^w\)$ 로 DPG Actor-Critic 알고리즘을 만드는 것이다.
+
+- Theorem 3. $\(\nabla_\theta J_\beta(\theta)=\mathbb{E}[\nabla_\theta\mu_\theta(s)\,\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}]\)$ 인 $\(\mu_\theta(s)\)$ 에 $\(Q^w(s,a)\)$ 가 compatible하기 위해서는 아래와 같은 조건을 만족해야 한다.
+```math
+\begin{aligned}
+1. \nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}=\nabla_\theta\mu_\theta(s)^\top w  \\
+2. \epsilon(s;\theta,w)=\nabla_aQ^w(s,a)\mid_{a=\mu_\theta(s)}-\nabla_aQ^\mu(s,a)\mid_{a=\mu_\theta(s)}일 때 파라미터 w는 \(MSE(\theta,w)=\mathbb{E}[\epsilon(s;\theta,w)^\top\epsilon(s;\theta,w)]\)를 최소화한다.
+\end{aligned}
+```
 
 
 # Reference
