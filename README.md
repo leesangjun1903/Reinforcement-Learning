@@ -19,6 +19,9 @@ PPO
 Distributional RL  
 QR-DQN
 
+# Survey
+- Deep Reinforcement Learning: A Survey : https://ieeexplore.ieee.org/document/9904958?denied=
+
 ## Paper with name
 - OpenAI Gym(papers with code) : https://paperswithcode.com/task/openai-gym
 - TRPO, Trust Region Policy Optimization with Generalized Advantage Estimation https://github.com/pat-coady/trpo/tree/master
