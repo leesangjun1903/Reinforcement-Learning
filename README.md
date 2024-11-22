@@ -19,6 +19,13 @@ PPO
 Distributional RL  
 QR-DQN
 
+# Awesome papers
+- https://github.com/tinyzqh/awesome-reinforcement-learning
+- https://github.com/aikorea/awesome-rl
+- https://github.com/wwxFromTju/awesome-reinforcement-learning-lib
+- https://github.com/opendilab/awesome-exploration-rl
+- https://github.com/jgvictores/awesome-deep-reinforcement-learning
+
 # Survey
 - Deep Reinforcement Learning: A Survey : https://ieeexplore.ieee.org/document/9904958?denied=
 
