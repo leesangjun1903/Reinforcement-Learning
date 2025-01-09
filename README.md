@@ -27,6 +27,9 @@ QR-DQN
 - https://github.com/jgvictores/awesome-deep-reinforcement-learning
 - https://www.zhihu.com/search?type=content&q=awesome%20reinforcement%20learning
 
+## Awesome Code
+- Stable-Baselines3 - Contrib : https://github.com/Stable-Baselines-Team/stable-baselines3-contrib/tree/e1ca24a1b2b0c90ebcded581c99b2567504cb113
+
 # Survey
 - Deep Reinforcement Learning: A Survey : https://ieeexplore.ieee.org/document/9904958?denied=
 
