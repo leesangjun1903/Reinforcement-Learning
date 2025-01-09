@@ -29,6 +29,7 @@ QR-DQN
 
 ## Awesome Code
 - Stable-Baselines3 - Contrib : https://github.com/Stable-Baselines-Team/stable-baselines3-contrib/tree/e1ca24a1b2b0c90ebcded581c99b2567504cb113
+- RL Baselines3 Zoo : https://github.com/DLR-RM/rl-baselines3-zoo/tree/master
 
 # Survey
 - Deep Reinforcement Learning: A Survey : https://ieeexplore.ieee.org/document/9904958?denied=
