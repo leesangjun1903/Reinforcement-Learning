@@ -44,6 +44,9 @@ QR-DQN
 - Deep Reinforcement Learning with Python by Nimish Sanghi https://github.com/Apress/deep-reinforcement-learning-python/tree/main
 - Hands-On Reinforcement Learning With Python https://github.com/sudharsan13296/Hands-On-Reinforcement-Learning-With-Python/tree/master
 
+## Environment
+- Hardware-Accelerated Reinforcement Learning Algorithms in pure Jax! : https://github.com/keraJLi/rejax?tab=readme-ov-file
+
 ## ETC(Blog)
 - Gym Rendering for Colab https://github.com/ryanrudes/colabgymrender?tab=readme-ov-file
 - Using a neural network to solve OpenAI's CartPole balancing environment https://pythonprogramming.net/openai-cartpole-neural-network-example-machine-learning-tutorial/
