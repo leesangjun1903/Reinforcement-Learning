@@ -19,6 +19,24 @@ PPO
 Distributional RL  
 QR-DQN
 
+# Theory
+# Reinforce Learning
+## AI Crash Course, Hadelin de Ponteves
+Chapter 1: Welcome to the Robot World  
+Chapter 2: Discover Your AI Toolkit  
+Chapter 3: Python Fundamentals – Learn How to Code in Python  
+Chapter 4: AI Foundation Techniques  
+Chapter 5: Your First AI Model – Beware the Bandits!  
+Chapter 6: AI for Sales and Advertising – Sell like the Wolf of AI Street  
+Chapter 7: Welcome to Q-Learning  
+Chapter 8: AI for Logistics – Robots in a Warehouse  
+Chapter 9: Going Pro with Artificial Brains – Deep Q-Learning  
+Chapter 10: AI for Autonomous Vehicles – Build a Self-Driving Car  
+Chapter 11: AI for Business – Minimize Costs with Deep Q-Learning  
+Chapter 12: Deep Convolutional Q-Learning  
+Chapter 13: AI for Games – Become the Master at Snake  
+Chapter 14: Recap and Conclusion
+
 # Awesome papers
 - https://github.com/tinyzqh/awesome-reinforcement-learning
 - https://github.com/aikorea/awesome-rl
