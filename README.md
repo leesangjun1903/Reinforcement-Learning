@@ -37,6 +37,22 @@ Chapter 12: Deep Convolutional Q-Learning
 Chapter 13: AI for Games – Become the Master at Snake  
 Chapter 14: Recap and Conclusion
 
+## Hands-On Reinforcement Learning with Python, Sudharsan Ravichandiran
+Chapter 1: Introduction to Reinforcement Learning  
+Chapter 2: Getting Started with OpenAI and TensorFlow  
+Chapter 3: The Markov Decision Process and Dynamic Programming  
+Chapter 4: Gaming with Monte Carlo Methods  
+Chapter 5: Temporal Difference Learning  
+Chapter 6: Multi-Armed Bandit Problem  
+Chapter 7: Deep Learning Fundamentals  
+Chapter 8: Atari Games with Deep Q Network  
+Chapter 9: Playing Doom with a Deep Recurrent Q Network  
+Chapter 10: The Asynchronous Advantage Actor Critic Network  
+Chapter 11: Policy Gradients and Optimization  
+Chapter 12: Capstone Project – Car Racing Using DQN  
+Chapter 13: Recent Advancements and Next Steps  
+
+
 # Awesome papers
 - https://github.com/tinyzqh/awesome-reinforcement-learning
 - https://github.com/aikorea/awesome-rl
