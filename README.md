@@ -52,6 +52,17 @@ Chapter 11: Policy Gradients and Optimization
 Chapter 12: Capstone Project – Car Racing Using DQN  
 Chapter 13: Recent Advancements and Next Steps  
 
+## Model-Based Reinforcement Learning, Milad Farsi and Jun Liu
+1 Nonlinear Systems Analysis  
+2 Optimal Control  
+3 Reinforcement Learning  
+4 Learning of Dynamic Models  
+5 Structured Online Learning-Based Control of Continuous-Time Nonlinear Systems  
+6 A Structured Online Learning Approach to Nonlinear Tracking with Unknown Dynamics  
+7 Piecewise Learning and Control with Stability Guarantees  
+8 An Application to Solar Photovoltaic Systems  
+9 An Application to Low-level Control of Quadrotors  
+10 Python Toolbox
 
 # Awesome papers
 - https://github.com/tinyzqh/awesome-reinforcement-learning
