@@ -64,6 +64,47 @@ Chapter 13: Recent Advancements and Next Steps
 9 An Application to Low-level Control of Quadrotors  
 10 Python Toolbox
 
+## Bandit Algorithms, Tor Lattimore
+Introduction  
+Foundations of Probability  
+Stochastic Processes and Markov Chains  
+Stochastic Bandits  
+Concentration of Measure  
+The Explore-Then-Commit Algorithm  
+The Upper Confidence Bound Algorithm  
+The Upper Confidence Bound Algorithm: Asymptotic Optimality  
+The Upper Confidence Bound Algorithm: Minimax Optimality  
+The Upper Confidence Bound Algorithm: Bernoulli Noise  
+The Exp3 Algorithm  
+The Exp3-IX Algorithm  
+Lower Bounds: Basic Ideas  
+Foundations of Information Theory  
+Minimax Lower Bounds  
+Instance-Dependent Lower Bounds  
+High-Probability Lower Bounds  
+Contextual Bandits  
+Stochastic Linear Bandits  
+Confidence Bounds for Least Squares Estimators  
+Optimal Design for Least Squares Estimators  
+Stochastic Linear Bandits with Finitely Many Arms  
+Stochastic Linear Bandits with Sparsity  
+Minimax Lower Bounds for Stochastic Linear Bandits  
+Asymptotic Lower Bounds for Stochastic Linear Bandits  
+Foundations of Convex Analysis  
+Exp3 for Adversarial Linear Bandits  
+Follow-the-Regularised-Leader and Mirror Descent  
+The Relation between Adversarial and Stochastic Linear Bandits  
+Combinatorial Bandits  
+Non-stationary Bandits  
+Ranking  
+Pure Exploration  
+Foundations of Bayesian Learning  
+Bayesian Bandits  
+Thompson Sampling  
+Partial Monitoring  
+Markov Decision Processes  
+
+
 # Awesome papers
 - https://github.com/tinyzqh/awesome-reinforcement-learning
 - https://github.com/aikorea/awesome-rl
