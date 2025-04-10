@@ -20,7 +20,26 @@ Distributional RL
 QR-DQN
 
 # Theory
-# Reinforce Learning
+## Reinforcement Learning: An Introduction, Richard S. Sutton
+Introduction  
+Multi-armed Bandits  
+Finite Markov Decision Processes  
+Dynamic Programming  
+Monte Carlo Methods  
+Temporal-Diﬀerence Learning  
+n-step Bootstrapping  
+Planning and Learning with Tabular Methods  
+On-policy Prediction with Approximation  
+On-policy Control with Approximation  
+Oﬀ-policy Methods with Approximation  
+Eligibility Traces  
+Policy Gradient Methods  
+Psychology  
+Neuroscience  
+Applications and Case Studies  
+Frontiers
+
+
 ## AI Crash Course, Hadelin de Ponteves
 Chapter 1: Welcome to the Robot World  
 Chapter 2: Discover Your AI Toolkit  
@@ -51,6 +70,34 @@ Chapter 10: The Asynchronous Advantage Actor Critic Network
 Chapter 11: Policy Gradients and Optimization  
 Chapter 12: Capstone Project – Car Racing Using DQN  
 Chapter 13: Recent Advancements and Next Steps  
+
+## Deep Reinforcement Learning Hands-On, Maxim Lapan
+Chapter 1: What Is Reinforcement Learning?  
+Chapter 2: OpenAI Gym  
+Chapter 3: Deep Learning with PyTorch  
+Chapter 4: The Cross-Entropy Method  
+Chapter 5: Tabular Learning and the Bellman Equation  
+Chapter 6: Deep Q-Networks  
+Chapter 7: Higher-Level RL Libraries  
+Chapter 8: DQN Extensions  
+Chapter 9: Ways to Speed up RL  
+Chapter 10: Stocks Trading Using RL   
+Chapter 11: Policy Gradients – an Alternative  
+Chapter 12: The Actor-Critic Method  
+Chapter 13: Asynchronous Advantage Actor-Critic  
+Chapter 14: Training Chatbots with RL  
+Chapter 15: The TextWorld Environment  
+Chapter 16: Web Navigation  
+Chapter 17: Continuous Action Space  
+Chapter 18: RL in Robotics  
+Chapter 19: Trust Regions – PPO, TRPO, ACKTR, and SAC  
+Chapter 20: Black-Box Optimization in RL  
+Chapter 21: Advanced Exploration  
+Chapter 22: Beyond Model-Free – Imagination  
+Chapter 23: AlphaGo Zero  
+Chapter 24: RL in Discrete Optimization  
+Chapter 25: Multi-agent RL  
+
 
 ## Model-Based Reinforcement Learning, Milad Farsi and Jun Liu
 1 Nonlinear Systems Analysis  
@@ -123,6 +170,11 @@ Markov Decision Processes
 ## Paper with name
 - OpenAI Gym(papers with code) : https://paperswithcode.com/task/openai-gym
 - TRPO, Trust Region Policy Optimization with Generalized Advantage Estimation https://github.com/pat-coady/trpo/tree/master
+- Reinforcement Learning – Intelligent Weighting of Monte Carlo and Temporal Differences, Martin Christiansson
+- A Hybrid Approach for Reinforcement Learning Using Virtual Policy Gradient for Balancing an Inverted Pendulum, Dylan Bates
+- Hyperparameters in Reinforcement Learning and How To Tune Them, Theresa Eimer
+- Deterministic Policy Gradient Algorithms(DPG), David Silver
+- 
 
 ## Lecture with Theory
 - Deep Reinforcement Learning, Seungsang Oh https://www.youtube.com/playlist?list=PLvbUC2Zh5oJtYXow4jawpZJ2xBel6vGhC
