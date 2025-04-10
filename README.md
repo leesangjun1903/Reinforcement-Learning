@@ -39,6 +39,24 @@ Neuroscience
 Applications and Case Studies  
 Frontiers
 
+## Reinforcement Learning: Theory and Algorithms, Alekh Agarwal
+Markov Decision Processes  
+Sample Complexity with a Generative Model  
+Linear Bellman Completeness  
+Fitted Dynamic Programming Methods  
+Statistical Limits of Generalization  
+Multi-Armed & Linear Bandits  
+Strategic Exploration in Tabular MDPs  
+Linearly Parameterized MDPs  
+Generalization with Bounded Bilinear Rank  
+Deterministic MDPs with Linearly Parameterized $Q⋆$  
+Policy Gradient Methods and Non-Convex Optimization  
+Optimality  
+Function Approximation and the NPG  
+CPI, TRPO, and More  
+Imitation Learning  
+Linear Quadratic Regulators  
+Partially Observable Markov Decision Processes 
 
 ## AI Crash Course, Hadelin de Ponteves
 Chapter 1: Welcome to the Robot World  
@@ -98,6 +116,72 @@ Chapter 23: AlphaGo Zero
 Chapter 24: RL in Discrete Optimization  
 Chapter 25: Multi-agent RL  
 
+## Deep Reinforcement Learning with Python, Nimish Sanghi
+Chapter 1:  Introduction to Reinforcement Learning  
+Chapter 2:  Markov Decision Processes  
+Chapter 3:  Model-Based Algorithms  
+Chapter 4:  Model-Free Approaches  
+Chapter 5:  Function Approximation  
+Chapter 6:  Deep Q-Learning  
+Chapter 7:  Policy Gradient Algorithms  
+Chapter 8:  Combining Policy Gradient and Q-Learning  
+Chapter 9:  Integrated Planning and Learning  
+Chapter 10:  Further Exploration and Next Steps  
+
+## Deep Reinforcement Learning with Python, Sudharsan Ravichandiran
+Chapter 1: Fundamentals of Reinforcement Learning  
+Chapter 2: A Guide to the Gym Toolkit  
+Chapter 3: The Bellman Equation and Dynamic Programming  
+Chapter 4: Monte Carlo Methods  
+Chapter 5: Understanding Temporal Difference Learning  
+Chapter 6: Case Study – The MAB Problem  
+Chapter 7: Deep Learning Foundations  
+Chapter 8: A Primer on TensorFlow  
+Chapter 9: Deep Q Network and Its Variants  
+Chapter 10: Policy Gradient Method  
+Chapter 11: Actor-Critic Methods – A2C and A3C  
+Chapter 12: Learning DDPG, TD3, and SAC  
+Chapter 13: TRPO, PPO, and ACKTR Methods  
+Chapter 14: Distributional Reinforcement Learning  
+Chapter 15: Imitation Learning and Inverse RL  
+Chapter 16: Deep Reinforcement Learning with Stable Baselines  
+Chapter 17: Reinforcement Learning Frontiers  
+
+## 강화학습, 오승상
+Markov Decision Process  
+Bellman Equation  
+Dynamic Programming  
+Value Iteration, Policy Iteration  
+Reinforcement Learning  
+Monte Carlo, Sarsa, Q-learning  
+Deep Reinforcement Learning  
+DQN, REINFORCE, A3C  
+Policy Gradient DRL  
+DDPG, TRPO, PPO  
+Distributional Reinforcement Learning  
+C51, QR-DQN, IQN  
+MAP Policy Optimisation (MPO)  
+Bayesian Statistics, ELBO, EM algorithm  
+
+## Mastering Reinforcement Learning with Python, Enes Bilgin
+Introduction to Reinforcement Learning  
+Multi-Armed Bandits  
+Contextual Bandits  
+Makings of the Markov Decision Process  
+Solving the Reinforcement Learning Problem  
+Deep Q-Learning at Scale  
+Policy-Based Methods  
+Model-Based Methods  
+Multi-Agent Reinforcement Learning  
+Machine Teaching  
+Generalization and Domain Randomization  
+Meta-Reinforcement Learning  
+Other Advanced Topics  
+Autonomous Systems  
+Supply Chain Management  
+Marketing, Personalization and Finance  
+Smart City and Cybersecurity  
+Challenges and Future Directions in Reinforcement Learning  
 
 ## Model-Based Reinforcement Learning, Milad Farsi and Jun Liu
 1 Nonlinear Systems Analysis  
@@ -110,6 +194,36 @@ Chapter 25: Multi-agent RL
 8 An Application to Solar Photovoltaic Systems  
 9 An Application to Low-level Control of Quadrotors  
 10 Python Toolbox
+
+## Reinforcement Learning and Stochastic Optimization, Warren B. Powell
+Sequential Decision Problems  
+Canonical Problems and Applications  
+Online Learning  
+Introduction to Stochastic Search  
+Derivative-Based Stochastic Search  
+Stepsize Policies  
+Derivative-Free Stochastic Search  
+State-dependent Problems  
+Modeling Sequential Decision Problems  
+Uncertainty Modeling  
+Designing Policies  
+Policy Function Approximations and Policy Search  
+Cost Function Approximations  
+Exact Dynamic Programming  
+Backward Approximate Dynamic Programming  
+Forward ADP I: The Value of a Policy  
+Forward ADP II: Policy Optimization  
+Forward ADP III: Convex Resource Allocation Problems  
+Direct Lookahead Policies  
+Multiagent Modeling and Learning  
+
+## Reinforcement Learning and Optimal Control, Dimitri P. Bertsekas
+Exact Dynamic Programming  
+Approximation in Value Space  
+Parametric Approximation  
+Infinite Horizon Reinforcement Learning  
+Aggregation  
+
 
 ## Bandit Algorithms, Tor Lattimore
 Introduction  
