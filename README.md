@@ -93,26 +93,26 @@ Chapter 13: Recent Advancements and Next Steps
 Chapter 1: What Is Reinforcement Learning?  
 Chapter 2: OpenAI Gym  
 Chapter 3: Deep Learning with PyTorch  
-Chapter 4: The Cross-Entropy Method  
-Chapter 5: Tabular Learning and the Bellman Equation  
+Chapter 4: The Cross-Entropy Method 
+Chapter 5: Tabular Learning and the Bellman Equation  
 Chapter 6: Deep Q-Networks  
 Chapter 7: Higher-Level RL Libraries  
-Chapter 8: DQN Extensions  
-Chapter 9: Ways to Speed up RL  
-Chapter 10: Stocks Trading Using RL   
+Chapter 8: DQN Extensions  
+Chapter 9: Ways to Speed up RL  
+Chapter 10: Stocks Trading Using RL  
 Chapter 11: Policy Gradients – an Alternative  
-Chapter 12: The Actor-Critic Method  
-Chapter 13: Asynchronous Advantage Actor-Critic  
-Chapter 14: Training Chatbots with RL  
+Chapter 12: The Actor-Critic Method  
+Chapter 13: Asynchronous Advantage Actor-Critic  
+Chapter 14: Training Chatbots with RL  
 Chapter 15: The TextWorld Environment  
 Chapter 16: Web Navigation  
 Chapter 17: Continuous Action Space  
 Chapter 18: RL in Robotics  
 Chapter 19: Trust Regions – PPO, TRPO, ACKTR, and SAC  
-Chapter 20: Black-Box Optimization in RL  
+Chapter 20: Black-Box Optimization in RL  
 Chapter 21: Advanced Exploration  
-Chapter 22: Beyond Model-Free – Imagination  
-Chapter 23: AlphaGo Zero  
+Chapter 22: Beyond Model-Free – Imagination  
+Chapter 23: AlphaGo Zero  
 Chapter 24: RL in Discrete Optimization  
 Chapter 25: Multi-agent RL  
 
