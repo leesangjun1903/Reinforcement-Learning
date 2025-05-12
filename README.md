@@ -295,6 +295,7 @@ Markov Decision Processes
 - Deep Reinforcement Learning with Python, Sudharsan Ravichandiran https://github.com/sudharsan13296/Deep-Reinforcement-Learning-With-Python/tree/master
 - Deep Reinforcement Learning with Python by Nimish Sanghi https://github.com/Apress/deep-reinforcement-learning-python/tree/main
 - Hands-On Reinforcement Learning With Python https://github.com/sudharsan13296/Hands-On-Reinforcement-Learning-With-Python/tree/master
+- Quantile Regression DQN - RL : https://www.kaggle.com/code/auxeno/quantile-regression-dqn-rl
 
 ## Environment
 - Hardware-Accelerated Reinforcement Learning Algorithms in pure Jax! : https://github.com/keraJLi/rejax?tab=readme-ov-file
