@@ -1,3 +1,3 @@
 - DPG
 - DDPG
-- Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions
+- Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions | Imitation learning, Reinforcement learning
