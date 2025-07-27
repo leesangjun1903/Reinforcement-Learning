@@ -1,3 +1,4 @@
 - DPG
 - DDPG
 - Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions | Imitation learning, Reinforcement learning
+- Quantifying Generalization in Reinforcement Learning | Overfitting in RL, ε-greedy, Entropy Bonus
