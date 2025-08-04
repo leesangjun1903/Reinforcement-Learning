@@ -26,10 +26,10 @@ R(s_t,a_t)+\gamma\max_{a_{t+1}^1}Q(s_{t-w+1:t+1},a_{t+1}^1) \quad \text{if} \qua
 $$
 
 2) **Conservative Regularization** (Eq.2)  
-   - TD-error 항(i) + α·E_{a∼˜πβ}[Q(s,a)²] 항(ii)  
-   - ˜πβ: 데이터 행동 제외 균등 분포 → 데이터 외 행동 Q-value를 최소(0)로 수렴
+   - TD-error 항(i) $+ α·E_{a∼˜πβ}[Q(s,a)²]$ 항(ii)  
+   - $˜πβ$ : 데이터 행동 제외 균등 분포 → 데이터 외 행동 Q-value를 최소(0)로 수렴
 3) **Monte Carlo & n-step Returns**  
-   - Bellman 타깃을 $$\max(\mathrm{MC\_return},\ TD\_target)$$ 형태로 교체해 초기 학습 속도↑  
+   - Bellman 타깃을 $$\max(\mathrm{MC\_{return}},\ TD\_{target})$$ 형태로 교체해 초기 학습 속도↑  
    - n-step 리턴 통해 순차 길이 긴 작업에서도 전파 속도↑
 
 ### 2.3 모델 구조  
