@@ -7,3 +7,4 @@
 - NAS : Neural Architecture Search with Reinforcement Learning | REINFORCE
 - Double Actor-Critic with TD Error-Driven Regularization in Reinforcement Learning
 - Research on the Deep Deterministic Policy Algorithm Based on the First-Order Inverted Pendulum
+- Discount Factor as a Regularizer in Reinforcement Learning
