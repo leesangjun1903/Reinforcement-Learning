@@ -5,3 +5,4 @@
 - MetaQNN : Designing Neural Network Architectures using Reinforcement Learning | Image classification, Reinforcement Learning
 - BlockQNN : Practical Block-wise Neural Network Architecture Generation | Image classification, Reinforcement Learning
 - NAS : Neural Architecture Search with Reinforcement Learning | REINFORCE
+- Double Actor-Critic with TD Error-Driven Regularization in Reinforcement Learning
