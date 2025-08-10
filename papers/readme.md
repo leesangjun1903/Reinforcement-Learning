@@ -6,3 +6,4 @@
 - BlockQNN : Practical Block-wise Neural Network Architecture Generation | Image classification, Reinforcement Learning
 - NAS : Neural Architecture Search with Reinforcement Learning | REINFORCE
 - Double Actor-Critic with TD Error-Driven Regularization in Reinforcement Learning
+- Research on the Deep Deterministic Policy Algorithm Based on the First-Order Inverted Pendulum
