@@ -8,3 +8,4 @@
 - Double Actor-Critic with TD Error-Driven Regularization in Reinforcement Learning
 - Research on the Deep Deterministic Policy Algorithm Based on the First-Order Inverted Pendulum
 - Discount Factor as a Regularizer in Reinforcement Learning
+- Stop Regressing: Training Value Functions via Classification for Scalable Deep RL
