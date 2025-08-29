@@ -11,3 +11,4 @@
 - Stop Regressing: Training Value Functions via Classification for Scalable Deep RL
 - Simple Policy Optimization
 - TAMER: Training an Agent Manually via Evaluative Reinforcement
+- Interactive Learning from Policy-Dependent Human Feedback
