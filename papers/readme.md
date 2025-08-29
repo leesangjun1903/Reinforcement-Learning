@@ -10,3 +10,4 @@
 - Discount Factor as a Regularizer in Reinforcement Learning
 - Stop Regressing: Training Value Functions via Classification for Scalable Deep RL
 - Simple Policy Optimization
+- TAMER: Training an Agent Manually via Evaluative Reinforcement
