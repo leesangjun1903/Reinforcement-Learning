@@ -1,4 +1,4 @@
-# AlphaGo : Mastering the Game of Go without Human Knowledge 
+# Mastering the Game of Go without Human Knowledge 
 
 **핵심 주장 및 주요 기여**  
 “Mastering the Game of Go without Human Knowledge” 논문은 **인간 데이터 전혀 사용 없이**, 오로지 **자의적(self-play) 강화학습**만으로 바둑에서 초인적(superhuman) 기량을 달성할 수 있음을 증명한다. 주요 기여는 다음과 같다.  
