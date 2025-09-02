@@ -13,3 +13,4 @@
 - TAMER: Training an Agent Manually via Evaluative Reinforcement
 - Interactive Learning from Policy-Dependent Human Feedback
 - Deep TAMER: Interactive Agent Shaping in High-Dimensional State Spaces
+- AlphaGo : Mastering the Game of Go without Human Knowledge
