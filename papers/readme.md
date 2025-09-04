@@ -14,3 +14,4 @@
 - Interactive Learning from Policy-Dependent Human Feedback
 - Deep TAMER: Interactive Agent Shaping in High-Dimensional State Spaces
 - Mastering the Game of Go without Human Knowledge
+- AlphaGo : Mastering the Game of Go with Deep Neural Networks and Tree Search
