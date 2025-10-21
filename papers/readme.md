@@ -24,4 +24,5 @@
 ## Algorithms
 - MCTS : Towards a Characterisation of Monte-Carlo Tree Search Performance in Different Games
 - Learning Simulation Control in General Game-Playing Agents
+- N-Grams and the Last-Good-Reply Policy Applied in General Game Playing
 
