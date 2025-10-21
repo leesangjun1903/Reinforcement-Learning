@@ -16,3 +16,5 @@
 - Mastering the Game of Go without Human Knowledge
 - AlphaGo : Mastering the Game of Go with Deep Neural Networks and Tree Search
 - Distral: Robust Multitask Reinforcement Learning
+- MPO : Maximum a Posteriori Policy Optimisation
+
