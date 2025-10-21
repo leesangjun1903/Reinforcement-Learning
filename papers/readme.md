@@ -29,6 +29,7 @@
 - Dueling Network Architectures for Deep Reinforcement Learning
 - PER : Prioritized Experience Replay
 - Deep Reinforcement Learning with Double Q-learning
+- Human-level control through deep reinforcement learning
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
