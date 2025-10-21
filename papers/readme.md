@@ -20,10 +20,10 @@
 - IQN : Implicit Quantile Networks for Distributional Reinforcement Learning
 - QR-DQN : Distributional Reinforcement Learning with Quantile Regression
 - A Distributional Perspective on Reinforcement Learning
-
-
-## Algorithms
+- PPO : Proximal Policy Optimization Algorithms
 - MCTS : Towards a Characterisation of Monte-Carlo Tree Search Performance in Different Games
+
+## Application
 - Learning Simulation Control in General Game-Playing Agents
 - N-Grams and the Last-Good-Reply Policy Applied in General Game Playing
 
