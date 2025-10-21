@@ -36,3 +36,4 @@
 - Human-level control through deep reinforcement learning
 - Playing Atari with Deep Reinforcement Learning
 - A Hybrid Approach for Reinforcement Learning Using Virtual Policy Gradient for Balancing an Inverted Pendulum
+- Hyperparameters in Reinforcement Learning and How To Tune Them
