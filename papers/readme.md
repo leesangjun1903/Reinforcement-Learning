@@ -17,4 +17,6 @@
 - AlphaGo : Mastering the Game of Go with Deep Neural Networks and Tree Search
 - Distral: Robust Multitask Reinforcement Learning
 - MPO : Maximum a Posteriori Policy Optimisation
+- IQN : Implicit Quantile Networks for Distributional Reinforcement Learning
+
 
