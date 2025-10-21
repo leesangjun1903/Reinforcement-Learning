@@ -18,5 +18,6 @@
 - Distral: Robust Multitask Reinforcement Learning
 - MPO : Maximum a Posteriori Policy Optimisation
 - IQN : Implicit Quantile Networks for Distributional Reinforcement Learning
+- QR-DQN : Distributional Reinforcement Learning with Quantile Regression
 
 
