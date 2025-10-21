@@ -15,3 +15,4 @@
 - Deep TAMER: Interactive Agent Shaping in High-Dimensional State Spaces
 - Mastering the Game of Go without Human Knowledge
 - AlphaGo : Mastering the Game of Go with Deep Neural Networks and Tree Search
+- Distral: Robust Multitask Reinforcement Learning
