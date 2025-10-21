@@ -34,3 +34,4 @@
 - Learning Simulation Control in General Game-Playing Agents
 - N-Grams and the Last-Good-Reply Policy Applied in General Game Playing
 - Human-level control through deep reinforcement learning
+- Playing Atari with Deep Reinforcement Learning
