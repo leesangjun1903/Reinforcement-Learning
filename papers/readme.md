@@ -15,7 +15,6 @@
 - Deep TAMER: Interactive Agent Shaping in High-Dimensional State Spaces
 - Mastering the Game of Go without Human Knowledge
 - AlphaGo : Mastering the Game of Go with Deep Neural Networks and Tree Search
-- Distral: Robust Multitask Reinforcement Learning
 - MPO : Maximum a Posteriori Policy Optimisation
 - IQN : Implicit Quantile Networks for Distributional Reinforcement Learning
 - QR-DQN : Distributional Reinforcement Learning with Quantile Regression
@@ -29,7 +28,11 @@
 - Dueling Network Architectures for Deep Reinforcement Learning
 - PER : Prioritized Experience Replay
 - Deep Reinforcement Learning with Double Q-learning
+
+## Multi-task Learning
+- Distral: Robust Multitask Reinforcement Learning
 - IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures
+- Multi-task Deep Reinforcement Learning with PopArt
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
