@@ -28,6 +28,7 @@
 - Dueling Network Architectures for Deep Reinforcement Learning
 - PER : Prioritized Experience Replay
 - Deep Reinforcement Learning with Double Q-learning
+- D4PG : Distributed Distributional Deterministic Policy Gradients
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
