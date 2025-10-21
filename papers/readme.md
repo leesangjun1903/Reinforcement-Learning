@@ -35,3 +35,4 @@
 - N-Grams and the Last-Good-Reply Policy Applied in General Game Playing
 - Human-level control through deep reinforcement learning
 - Playing Atari with Deep Reinforcement Learning
+- A Hybrid Approach for Reinforcement Learning Using Virtual Policy Gradient for Balancing an Inverted Pendulum
