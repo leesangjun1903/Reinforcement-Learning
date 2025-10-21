@@ -23,4 +23,5 @@
 
 ## Algorithms
 - MCTS : Towards a Characterisation of Monte-Carlo Tree Search Performance in Different Games
+- Learning Simulation Control in General Game-Playing Agents
 
