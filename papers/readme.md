@@ -22,6 +22,7 @@
 - A Distributional Perspective on Reinforcement Learning
 - PPO : Proximal Policy Optimization Algorithms
 - MCTS : Towards a Characterisation of Monte-Carlo Tree Search Performance in Different Games
+- TRPO : Trust Region Policy Optimization
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
