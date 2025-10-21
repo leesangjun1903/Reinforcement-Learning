@@ -25,6 +25,7 @@
 - TRPO : Trust Region Policy Optimization
 - A3C : Asynchronous Methods for Deep Reinforcement Learning
 - Policy Gradient Methods for Reinforcement Learning with Function Approximation
+- REINFORCE : Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
