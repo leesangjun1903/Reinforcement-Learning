@@ -1,8 +1,100 @@
-# CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING
+# DDPG : Continuous control with deep reinforcement learning
 
-# DDPG
+## 1. 핵심 주장 및 주요 기여 요약
+
+이 논문은 **딥 Q-러닝(Deep Q-Learning)의 핵심 아이디어**를 연속적인(continuous) 행동 공간에 적용하고자 새로운 딥 강화학습 알고리즘을 제안한다. 제안된 알고리즘은 **Deterministic Policy Gradient(DPG)** 기반의 **actor-critic 구조**를 사용하며, 불연속 행동에만 국한되어 있던 기존 DQN의 한계를 극복하여, 고차원 연속 제어 문제(c\rontinuous control tasks)를 효율적으로 푸는 것이 핵심이다.
+
+주요 기여점은 다음과 같다.
+
+- **딥러닝 기반 함수 근사기**를 활용한 연속 제어 강화학습 구조를 제시.
+- **오프-폴리시(off-policy) 학습**, **경험 재생(replay buffer)**, **타깃 네트워크(target network)** 등 DQN의 핵심 요소를 DPG actor-critic 구조에 결합.
+- 다양한 물리 시뮬레이션(20개 이상), 고차원 환경에서 **모델의 일반성과 견고성**을 실험적으로 입증.
+- **픽셀 기반 입력(end-to-end vision control)**까지 확장 가능함을 보임.[1]
+
+## 2. 논문이 해결하고자 하는 문제, 제안 방법, 모델 구조, 성능 및 한계
+
+### 해결하고자 하는 문제
+
+- 고차원 연속 공간의 제어 문제에서는 DQN과 같은 Q-러닝 계열 알고리즘이 **행동공간의 지수적 증가(불연속화의 비효율성)** 문제로 적용이 어렵다.
+- 경험적으로 커다란 신경망 함수 근사기를 쓸 때 학습이 **불안정하거나 수렴이 보장되지 않는** 문제가 크다.
+
+### 제안 방법 및 수식
+
+- **Deterministic Policy Gradient (DPG) 기반의 Actor-Critic** 구조:
+  - Policy(Actor): $$a_t = \mu(s_t | \theta^\mu) $$
+  - Critic: Q함수 근사 $$Q(s, a | \theta^Q) $$
+  - Critic 학습(Bellman Eq.):  
+
+$$ L = \mathbb{E}_{(s,a,r,s') \sim D} \left[ (Q(s,a|\theta^Q) - y)^2 \right] $$
+    
+$$ y = r + \gamma Q(s', \mu(s'|\theta^\mu)|\theta^{Q'}) $$
+  
+  - Actor 학습(정책 변화도):
+
+$$
+    \nabla_{\theta^\mu} J \approx \mathbb{E}_{s \sim D} \left[ \nabla_a Q(s, a|\theta^Q)|_{a=\mu(s)} \nabla_{\theta^\mu} \mu(s|\theta^\mu) \right]
+    $$
+
+- **DQN의 주요 아이디어 도입**:
+  - 경험 재생(replay buffer):
+    - 샘플 간 상관관계 감소, 미니배치 학습 가능
+  - 타깃 네트워크 활용(soft update):
+    - $$\theta^{Q'} \leftarrow \tau \theta^Q + (1-\tau) \theta^{Q'} $$
+    - 학습 안정성 극대화
+  - **배치 정규화(batch normalization)**로 서로 다른 입력 스케일에 대한 학습 효율/일반화 개선
+
+### 모델 구조 및 학습 방법
+
+- **신경망 아키텍처**:
+  - Actor/Critic 모두에서 fully-connected, 픽셀 입력의 경우 convolutional layer 도입
+  - 모든 레이어에 batch norm
+  - Actor는 tanh 등으로 action bounded
+- **탐험 정책**:  
+  일반적인 무작위 탐험보다 **Ornstein-Uhlenbeck 노이즈**(물리적 관성 환경에 적합) 추가
+
+### 성능 평가와 한계
+
+- 20종 이상의 MuJoCo 환경 및 자동차 경주(Torcs) 등에서 **플래너(iLQG, 최적 계획자)와 비슷하거나 더 나은 성능** 달성
+- **입력 특성에 상관없이(hyperparameter/fixed network) 높은 범용성** 유지
+- **픽셀 기반 관찰만으로도 우수한 성능** 보임
+
+#### 한계
+
+- **모델-프리 강화학습 특성상** 매우 많은 에피소드가 필요(샘플 비효율)
+- 안정적 학습이 가능하나, 여전히 "이론적 수렴 보장"은 불충분함
+- 환경과 목적에 따라 하이퍼파라미터 튜닝 필요.[1]
+
+## 3. 모델 일반화 성능 관련 논의
+
+- **같은 학습 알고리즘, 구조, 하이퍼파라미터**로 다양한 환경을 모두 견고하게 학습
+- **Batch Normalization** 도입으로 입력의 다양성과 스케일 변화에도 성능 저하가 적다
+- **픽셀 입력에서 직접 정책을 학습**하여 표현력, 전이 및 실제 센서리 환경에 직접 적용할 수 있는 **범용성** 확보
+- 다양한 물리 환경에서 별도 설정 변경 없이 바로 적용 가능한 것이 **일반화 성능**을 뒷받침함.[1]
+
+## 4. 앞으로의 영향 및 연구 고려점
+
+### 연구 영향
+
+- **연속 제어에서의 딥 강화학습의 기본 패러다임**을 제시, 이후 DDPG 등 주요 강화학습 알고리즘의 표준이 됨
+- 픽셀 기반 end-to-end control, 다양한 로보틱스 실험 등 최신 연구 기반 마련
+
+### 앞으로의 연구 시 고려점
+
+- **샘플 효율성** 극복(더 빠르고 데이터 효율적인 강화학습 필요)
+- 이론적 수렴 보장 및 안정성 향상
+- 더 다양한 현실적 노이즈·불확실성 하에서의 견고성 실험 필요
+- 분산 트레이닝·메모리 활용 최적화 등 대규모 시스템으로의 확장 고려
+- 다양한 탐험 전략/모델 기반 강화학습 기법 등과의 결합 가능성 탐색.[1]
+
+***
+
+[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/65988149/db0af17b-6a1d-4ac9-8c71-3f9b0304e5e2/1509.02971v6.pdf)
+
+
+<details>
 
 # Abstract
+  
 Deep Q-Learing에서의 성공의 기반이 되었던 주요 아이디어들을 채용해 continuous action domain으로 옮겼다.  
 deterministic policy gradient 기반의 actor-critic, model-free 알고리즘이 continuous action spaces에서도 잘 돌아간다는 것으로 보인다.  
 동일한 학습 알고리즘, network 구조, hyper-parameter를 이용해 20가지가 넘는 물리 시뮬레이션 task를 모두 풀어냈다.  
@@ -196,3 +288,5 @@ DDPG와 같은 접근방식에는 몇가지 한계점이 존재한다.
 - https://zhuanlan.zhihu.com/p/337976595
 - https://zhuanlan.zhihu.com/p/615999880
 - https://zhuanlan.zhihu.com/p/240732934
+
+</details>
