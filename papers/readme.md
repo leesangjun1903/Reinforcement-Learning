@@ -19,6 +19,7 @@
 - MPO : Maximum a Posteriori Policy Optimisation
 - IQN : Implicit Quantile Networks for Distributional Reinforcement Learning
 - QR-DQN : Distributional Reinforcement Learning with Quantile Regression
+- A Distributional Perspective on Reinforcement Learning
 
 
 ## Algorithms
