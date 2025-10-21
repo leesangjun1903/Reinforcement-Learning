@@ -27,6 +27,7 @@
 - Policy Gradient Methods for Reinforcement Learning with Function Approximation
 - REINFORCE : Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning
 - Dueling Network Architectures for Deep Reinforcement Learning
+- PER : Prioritized Experience Replay
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
