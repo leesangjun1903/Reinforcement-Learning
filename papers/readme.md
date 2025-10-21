@@ -23,6 +23,7 @@
 - PPO : Proximal Policy Optimization Algorithms
 - MCTS : Towards a Characterisation of Monte-Carlo Tree Search Performance in Different Games
 - TRPO : Trust Region Policy Optimization
+- A3C : Asynchronous Methods for Deep Reinforcement Learning
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
