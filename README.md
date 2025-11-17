@@ -22,6 +22,7 @@
 - Hyperparameters in Reinforcement Learning and How To Tune Them, Theresa Eimer
 - Deterministic Policy Gradient Algorithms(DPG), David Silver
 - Deepmind RL : https://deepmind.google/search/?query=reinforcement+learning
+- RL Unplugged: A Suite of Benchmarks for Offline Reinforcement Learning
 
 ## Lecture with Theory
 - Deep Reinforcement Learning, Seungsang Oh https://www.youtube.com/playlist?list=PLvbUC2Zh5oJtYXow4jawpZJ2xBel6vGhC
