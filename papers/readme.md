@@ -31,6 +31,7 @@
 - D4PG : Distributed Distributional Deterministic Policy Gradients
 - Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
 - Pop-Art : Learning values across many orders of magnitude
+- Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
