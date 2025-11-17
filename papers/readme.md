@@ -36,6 +36,7 @@
 - Distral: Robust Multitask Reinforcement Learning
 - IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures
 - Multi-task Deep Reinforcement Learning with PopArt
+- Multi-Agent Reinforcement Learning for Networked System Control
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
