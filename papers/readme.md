@@ -32,12 +32,14 @@
 - Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
 - Pop-Art : Learning values across many orders of magnitude
 - Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers
+- 
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
 - IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures
 - Multi-task Deep Reinforcement Learning with PopArt
 - Multi-Agent Reinforcement Learning for Networked System Control
+- DreamerV3: Mastering Diverse Domains through World Models
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
