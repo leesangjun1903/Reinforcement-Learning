@@ -32,7 +32,7 @@
 - Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
 - Pop-Art : Learning values across many orders of magnitude
 - Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers
-- 
+- AlphaDev : Faster Sorting Algorithms Discovered Using Deep Reinforcement Learning
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
