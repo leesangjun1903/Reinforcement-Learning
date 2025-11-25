@@ -57,3 +57,4 @@
 - Hyperparameters in Reinforcement Learning and How To Tune Them
 - Outracing champion Gran Turismo drivers with deep reinforcement learning
 - Magnetic control of tokamak plasmas through deep reinforcement learning
+- AlphaTensor : Discovering faster matrix multiplication algorithms with reinforcement learning
