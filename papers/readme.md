@@ -56,3 +56,4 @@
 - A Hybrid Approach for Reinforcement Learning Using Virtual Policy Gradient for Balancing an Inverted Pendulum
 - Hyperparameters in Reinforcement Learning and How To Tune Them
 - Outracing champion Gran Turismo drivers with deep reinforcement learning
+- Magnetic control of tokamak plasmas through deep reinforcement learning
