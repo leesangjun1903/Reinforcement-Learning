@@ -33,6 +33,7 @@
 - Pop-Art : Learning values across many orders of magnitude
 - Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers
 - AlphaDev : Faster Sorting Algorithms Discovered Using Deep Reinforcement Learning
+- Outracing champion Gran Turismo drivers with deep reinforcement learning
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
