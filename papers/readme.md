@@ -58,3 +58,4 @@
 - Outracing champion Gran Turismo drivers with deep reinforcement learning
 - Magnetic control of tokamak plasmas through deep reinforcement learning
 - AlphaTensor : Discovering faster matrix multiplication algorithms with reinforcement learning
+- Planning with Diffusion for Flexible Behavior Synthesis
