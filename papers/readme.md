@@ -44,6 +44,7 @@
 - Multi-task Deep Reinforcement Learning with PopArt
 - Multi-Agent Reinforcement Learning for Networked System Control
 - DreamerV3: Mastering Diverse Domains through World Models
+- Learning to Brachiate via Simplified Model Imitation
 
 ## Online Reinforcement Learning
 - Efficient Online Reinforcement Learning with Offline Data
