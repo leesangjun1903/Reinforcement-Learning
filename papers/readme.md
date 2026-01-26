@@ -49,6 +49,9 @@
 ## Online Reinforcement Learning
 - Efficient Online Reinforcement Learning with Offline Data
 
+## Offline Reinforcement Learning
+- Conservative Q-Learning for Offline Reinforcement Learning
+
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
 - N-Grams and the Last-Good-Reply Policy Applied in General Game Playing
