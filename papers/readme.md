@@ -51,6 +51,7 @@
 
 ## Offline Reinforcement Learning
 - Conservative Q-Learning for Offline Reinforcement Learning
+- Offline Reinforcement Learning with Implicit Q-Learning
 
 ## Application
 - Learning Simulation Control in General Game-Playing Agents
