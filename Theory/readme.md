@@ -17,7 +17,10 @@ A3C
 TRPG  
 PPO  
 Distributional RL  
-QR-DQN
+QR-DQN  
+IQN
+
+Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms
 
 # Theory
 ## Reinforcement Learning: An Introduction, Richard S. Sutton
