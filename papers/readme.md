@@ -37,6 +37,7 @@
 - Pop-Art : Learning values across many orders of magnitude
 - Off-Dynamics Reinforcement Learning: Training for Transfer with Domain Classifiers
 - AlphaDev : Faster Sorting Algorithms Discovered Using Deep Reinforcement Learning
+- Beyond Mode Collapse: Distribution Matching for Diverse Reasoning
 
 ## Multi-task Learning
 - Distral: Robust Multitask Reinforcement Learning
